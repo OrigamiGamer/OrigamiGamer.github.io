@@ -28,12 +28,14 @@ article {
 div.bg-img {
 	background-attachment: fixed;
 	/*background-image: url(https://w.wallhaven.cc/full/72/wallhaven-727q29.jpg);*/
-	background-image: url(https://nyat-static.globalslb.net/natfrp/index/bg2.jpg);
+	/*background-image: url(https://nyat-static.globalslb.net/natfrp/index/bg2.jpg);*/
+	/*background-image: url(https://w.wallhaven.cc/full/rd/wallhaven-rd9ly1.jpg);*/
+	background-image: url(https://tiebapic.baidu.com/forum/pic/item/54d198504fc2d562ba6bf634a21190ef74c66cf5.jpg?tbpicau=2022-06-13-05_ab98e43d834f399e9ea469e59807fe79);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	-webkit-filter: blur(10px);
-	filter: blur(10px);
+	-webkit-filter: blur(0px);
+	filter: blur(0px);
 	height: 100%;
 	left: 0;
 	opacity: 0.9;
@@ -46,8 +48,8 @@ div.bg-img {
 
 div.bg-img {
 	animation-name: bg_into;
-	animation-duration: 0.7s;
-	animation-timing-function: ease-out;
+	animation-duration: 1.2s;
+	animation-timing-function: cubic-bezier(0.8, 0.2, 0.2, 0.8);
 	animation-direction: alternate;
 	animation-play-state: running;
 }
@@ -55,13 +57,15 @@ div.bg-img {
 @keyframes bg_into {
 	0% {
 		transform: scale(1.2);
-		background-color: rgba(0, 0, 0, 0.5);
-		/* opacity: 0.5; */
+		background-color: rgba(0, 0, 0, 0.8);
+		-webkit-filter: blur(16px);
+		filter: blur(16px);
 	}
 
 	100% {
 		transform: scale(1.0);
 		background-color: rgba(0, 0, 0, 0.0);
-		/* opacity: 0.9; */
+		-webkit-filter: blur(0px);
+		filter: blur(0px);
 	}
 }
