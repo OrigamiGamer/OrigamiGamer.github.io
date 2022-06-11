@@ -46,7 +46,7 @@ div.bg-img {
 
 div.bg-img {
 	animation-name: bg_into;
-	animation-duration: 10s;
+	animation-duration: 0.7s;
 	animation-timing-function: ease-out;
 	animation-direction: alternate;
 	animation-play-state: running;
@@ -54,14 +54,14 @@ div.bg-img {
 
 @keyframes bg_into {
 	0% {
-		transform: scale(1.4);
+		transform: scale(1.2);
 		background-color: rgba(0, 0, 0, 0.5);
-		opacity: 0.5;
+		/* opacity: 0.5; */
 	}
 
 	100% {
 		transform: scale(1.0);
 		background-color: rgba(0, 0, 0, 0.0);
-		opacity: 0.9;
+		/* opacity: 0.9; */
 	}
 }
