@@ -1,0 +1,67 @@
+header {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	box-sizing: border-box;
+	background-color: rgba(0, 0, 0, 0.2);
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+	padding: 0px 20px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+body {
+	background-color: #1e1e1e;
+	color: #fff;
+	cursor: default;
+	font-family: Helvetica, sans-serif;
+	font-size: 18px;
+	margin: 0;
+}
+
+article {
+	display: block;
+	margin: 15px;
+	margin-top: 70px;
+}
+
+div.bg-img {
+	background-attachment: fixed;
+	/*background-image: url(https://w.wallhaven.cc/full/72/wallhaven-727q29.jpg);*/
+	background-image: url(https://nyat-static.globalslb.net/natfrp/index/bg2.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+	height: 100%;
+	left: 0;
+	opacity: 0.9;
+	position: fixed;
+	top: 0;
+	transform: scale(1.0);
+	width: 100%;
+	z-index: -1
+}
+
+div.bg-img {
+	animation-name: bg_into;
+	animation-duration: 10s;
+	animation-timing-function: ease-out;
+	animation-direction: alternate;
+	animation-play-state: running;
+}
+
+@keyframes bg_into {
+	0% {
+		transform: scale(1.4);
+		background-color: rgba(0, 0, 0, 0.5);
+		opacity: 0.5;
+	}
+
+	100% {
+		transform: scale(1.0);
+		background-color: rgba(0, 0, 0, 0.0);
+		opacity: 0.9;
+	}
+}

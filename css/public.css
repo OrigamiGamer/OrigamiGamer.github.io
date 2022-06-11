@@ -1,0 +1,58 @@
+.logo_font {
+	color: #fff;
+	font-size: 26px;
+	text-decoration: none;
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 100px;
+	float: left;
+}
+
+img.myface {
+	border-radius: 50%;
+
+}
+
+div.header_link {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: center;
+	float: left;
+}
+
+a.header_item {
+	color: #fff;
+	font-size: 26px;
+	text-decoration: none;
+	padding: 10px;
+	margin-left: 5px;
+	transition: 0.3s;
+}
+
+a.header_item:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Button */
+input.button {
+	display: flex;
+	margin: 8px;
+	padding: 16px;
+	border: 0px;
+	border-radius: 12px;
+	background-color: rgba(27, 27, 27, 0.5);
+	font-size: 14px;
+	color: #eee;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+input.button:hover {
+	background-color: rgba(27, 27, 27, 1);
+	transition: all 0.3;
+}
+
+input.button:active {
+	background-color: rgba(104, 104, 104, 0.5);
+}
