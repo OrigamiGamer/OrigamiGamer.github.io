@@ -54,7 +54,7 @@ a.header_item:active {
 /* Button */
 .button {
     position: relative;
-    display:inline;
+    display: inline;
     margin: 14px;
     padding: 14px;
     border: 0px;
