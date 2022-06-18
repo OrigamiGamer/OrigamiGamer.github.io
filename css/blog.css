@@ -53,14 +53,14 @@ div.bg-img {
 div.bg-img {
 	animation-name: bg_into;
 	animation-duration: 1.2s;
-	animation-timing-function: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+	animation-timing-function: cubic-bezier(0.8, 0.4, 0.2, 0.8);
 	animation-direction: alternate;
 	animation-play-state: running;
 }
 
 @keyframes bg_into {
 	0% {
-		transform: scale(1.2);
+		transform: scale(1.4);
 		background-color: rgba(0, 0, 0, 0.8);
 		-webkit-filter: blur(32px);
 		filter: blur(32px);
