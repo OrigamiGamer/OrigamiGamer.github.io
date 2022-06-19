@@ -2,74 +2,126 @@ body {
 	background-color: #1e1e1e;
 	color: #fff;
 	cursor: default;
-	font-family: Helvetica, sans-serif;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-size: 18px;
 	margin: 0;
 }
 
-header {
-	display: block;
-	position: fixed;
-	background-color: rgba(0, 0, 0, 0.4);
-	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.6);
-	padding: 0px 20px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	margin-bottom: 60px;;
-	box-sizing: border-box;
-	top: 0;
-	width: 100%;
-}
-
-aside {
-	position: fixed;
-	background-color: rgba(0, 0, 0, 0.4);
+article {
+	opacity: 0;
+	margin: 15px;
+	margin-top: 6%;
+	z-index: 0;
 }
 
 article {
-	position: fixed;
-	margin: 15px;
-	margin-top: 55px;
+	animation-delay: 1s;
+	animation-name: article-into;
+	animation-duration: 0.3s;
+	animation-timing-function: ease-out;
+	animation-direction: alternate;
+	animation-play-state: running;
+	animation-fill-mode: forwards;
 }
 
-div.bg-img {
-	background-attachment: fixed;
-	background-image: url("../img/bg1.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	-webkit-filter: blur(0px);
-	filter: blur(0px);
-	height: 100%;
-	left: 0;
-	opacity: 0.9;
-	position: fixed;
-	top: 0;
-	transform: scale(1.0);
-	width: 100%;
-	z-index: -1
+@keyframes article-into {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 255;
+	}
 }
 
-div.bg-img {
-	animation-name: bg_into;
-	animation-duration: 1.2s;
-	animation-timing-function: cubic-bezier(0.8, 0.4, 0.2, 0.8);
+header {
+	animation-name: header-into;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
 	animation-direction: alternate;
 	animation-play-state: running;
 }
 
-@keyframes bg_into {
+@keyframes header-into {
 	0% {
-		transform: scale(1.4);
-		background-color: rgba(0, 0, 0, 0.8);
-		-webkit-filter: blur(32px);
-		filter: blur(32px);
+		top: -40%;
+	}
+
+	100% {
+		top: 0;
+	}
+}
+
+
+/* welcome */
+div.welcome-div {
+	height: 100%;
+	width: 100%;
+}
+
+
+p.welcome-p {
+	font-size: 36px;
+	font-weight: bold;
+	position: fixed;
+	display: block;
+	margin-top: 20%;
+	margin-left: 45%;
+	opacity: 0;
+	z-index: 2;
+}
+
+p.welcome-p {
+	animation-name: p-into;
+	animation-duration: 1.2s;
+	animation-timing-function: cubic-bezier(0.9, 0.1, 0.1, 0.9);
+	animation-direction: alternate;
+	animation-play-state: running;
+}
+
+@keyframes p-into {
+	20% {
+		opacity: 255;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+
+div.welcome-bg {
+	background-image: url("../img/bg2.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+div.welcome-bg {
+	animation-name: bg-into;
+	animation-duration: 2s;
+	animation-timing-function: cubic-bezier(0.9, 0.1, 0.1, 0.9);
+	animation-direction: alternate;
+	animation-play-state: running;
+}
+
+@keyframes bg-into {
+	0% {
+		transform: scale(1.5);
+		-webkit-filter: blur(-64px);
+		filter: blur(-64px);
+		/*z-index: 1;*/
 	}
 
 	100% {
 		transform: scale(1.0);
-		background-color: rgba(0, 0, 0, 0.0);
-		-webkit-filter: blur(0px);
-		filter: blur(0px);
+		-webkit-filter: blur(0);
+		filter: blur(0);
 	}
 }

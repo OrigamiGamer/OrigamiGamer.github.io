@@ -16,7 +16,7 @@
         var _blog;
         switch (name) {
             case "creakler":
-                _blog = "https://creaklerblog.freeflarum.com";
+                _blog = "https://qianshi-oristudio.github.io";
                 break;
             case "omofun":
                 _blog = "https://omofun.tv";
@@ -25,6 +25,4 @@
         window.location.href = _blog;
     }
 
-
-    initialize();
 }

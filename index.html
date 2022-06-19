@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,height=device-height">
 	<link rel="stylesheet" href="css/blog.css" />
 	<link rel="stylesheet" href="css/public.css" />
 	<script type="text/javascript" src="js/basic.js"></script>
@@ -10,26 +11,25 @@
 </head>
 
 <body>
-	<div class="bg-img"></div>
+	<div class="welcome-div">
+		<div class="welcome-bg"></div>
+		<p class="welcome-p">welcome</p>
+	</div>
 	<header>
-		<a class="logo_font" href="index.html">Origami</a>
 		<div class="header_link">
+			<img class="header_face" src="img/face1.gif" alt />
+			<a class="header_item logo_font" href="index.html">Origami</a>
+		</div>
+		<div class="header_link">
+			<a class="header_item" href="WindTalk-Plugins/chat/bubble.html">首页</a>
 			<a class="header_item" href="WindTalk-Plugins/chat/chat.html">Json-Chat</a>
 			<a class="header_item" href="WindTalk-Plugins/chat/bubble.html">Bubble</a>
 		</div>
 	</header>
-	<!--aside>what
-		<div>
-			<input class="button" type="button" value="Never Give Up!" />
-		</div>
-	</aside-->
 	<article>
-		<div>
-			<button class="button">Hi! Welcome to my blog!</button>
-			<button class="button" onclick="friendship_blog('creakler')">Creakler's Blog</button>
-			<button class="button" onclick="friendship_blog('omofun')">OmoFun</button>
-			<img id="face" class="face" />
-		</div>
+		<button class="button">Hi! Welcome to my blog!</button>
+		<button class="button" onclick="friendship_blog('creakler')">Creakler's Blog</button>
+		<button class="button" onclick="friendship_blog('omofun')">OmoFun</button>
 	</article>
 </body>
 
