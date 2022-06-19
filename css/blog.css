@@ -8,9 +8,11 @@ body {
 }
 
 article {
+	position: relative;
+	top: 50px;
 	opacity: 0;
 	margin: 15px;
-	margin-top: 6%;
+	/*margin-top: 6%;*/
 	z-index: 0;
 }
 
@@ -53,75 +55,3 @@ header {
 }
 
 
-/* welcome */
-div.welcome-div {
-	height: 100%;
-	width: 100%;
-}
-
-
-p.welcome-p {
-	font-size: 36px;
-	font-weight: bold;
-	position: fixed;
-	display: block;
-	margin-top: 20%;
-	margin-left: 45%;
-	opacity: 0;
-	z-index: 2;
-}
-
-p.welcome-p {
-	animation-name: p-into;
-	animation-duration: 1.2s;
-	animation-timing-function: cubic-bezier(0.9, 0.1, 0.1, 0.9);
-	animation-direction: alternate;
-	animation-play-state: running;
-}
-
-@keyframes p-into {
-	20% {
-		opacity: 255;
-	}
-
-	100% {
-		opacity: 0;
-	}
-}
-
-
-div.welcome-bg {
-	background-image: url("../img/bg2.jpg");
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: fixed;
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	z-index: -1;
-}
-
-div.welcome-bg {
-	animation-name: bg-into;
-	animation-duration: 2s;
-	animation-timing-function: cubic-bezier(0.9, 0.1, 0.1, 0.9);
-	animation-direction: alternate;
-	animation-play-state: running;
-}
-
-@keyframes bg-into {
-	0% {
-		transform: scale(1.5);
-		-webkit-filter: blur(-64px);
-		filter: blur(-64px);
-		/*z-index: 1;*/
-	}
-
-	100% {
-		transform: scale(1.0);
-		-webkit-filter: blur(0);
-		filter: blur(0);
-	}
-}
