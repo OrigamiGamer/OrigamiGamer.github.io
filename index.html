@@ -6,12 +6,14 @@
 	<meta name="viewport" content="width=device-width,height=device-height">
 	<link rel="stylesheet" href="css/blog.css" />
 	<link rel="stylesheet" href="css/public.css" />
+	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+	<script type="text/javascript" src="js/markdown.js"></script>
 	<script type="text/javascript" src="js/basic.js"></script>
 	<title>Origami's Blog</title>
 </head>
 
 <body>
-	<div class="welcome-div">
+	<div id="welcome" class="welcome-div">
 		<div class="welcome-bg"></div>
 		<p class="welcome-p">welcome</p>
 	</div>
@@ -21,15 +23,19 @@
 			<a class="header_item logo_text" href="index.html">Origami</a>
 		</div>
 		<div class="header_link">
-			<a class="header_item" href="WindTalk-Plugins/chat/bubble.html">Main</a>
+			<a class="header_item" href="index.html">主页</a>
 			<a class="header_item" href="WindTalk-Plugins/chat/chat.html">JSON</a>
 			<a class="header_item" href="WindTalk-Plugins/chat/bubble.html">Bubble</a>
 		</div>
 	</header>
 	<article>
-		<button class="button">Hi! Welcome to my blog!</button>
-		<button class="button" onclick="friendship_blog('creakler')">Creakler's Blog</button>
-		<button class="button" onclick="friendship_blog('omofun')">OmoFun</button>
+		<div class="article-bg">
+			<button class="button">Hi! Welcome to my blog!</button>
+			<button class="button" onclick="target('creakler')">Creakler's Blog</button>
+			<button class="button" onclick="target('omofun')">OmoFun</button>
+			<!--iframe src="articles/First article.md"></iframe-->
+		</div>
+		<!--div id="content" class="article_content">(文章内容)</div-->
 	</article>
 </body>
 
