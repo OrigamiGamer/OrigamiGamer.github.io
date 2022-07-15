@@ -58,6 +58,7 @@ body {
   color: #dfdfdf;
   font-size: 100%;
   text-align: right;
+  mix-blend-mode: difference;
 }
 
 .chat-receiver div:nth-of-type(3) {
@@ -108,7 +109,7 @@ body {
 }
 
 .chat-notice span {
-  background-color: rgba(50, 50, 50, 0.4);
+  background-color: rgba(20, 20, 20, 0.5);
   line-height: 25px;
   border-radius: 40px;
   padding: 5px 10px;
@@ -116,4 +117,5 @@ body {
 
 span {
   color: #FFF;
+  mix-blend-mode: difference;
 }
