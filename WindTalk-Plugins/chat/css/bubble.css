@@ -5,6 +5,11 @@ body {
   filter: blur(0px);
   background-color: transparent;
   font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+  
+}
+
+.img-face {
+  border-radius: 100%;
 }
 
 .chat-sender {
@@ -14,10 +19,6 @@ body {
 
 .chat-sender div:nth-of-type(1) {
   float: left;
-}
-
-.chat-sender img {
-  border-radius: 100%;
 }
 
 .chat-sender div:nth-of-type(2) {
@@ -31,11 +32,11 @@ body {
 .chat-sender div:nth-of-type(3) {
   /*background-color: #4a4a4a;*/
   background-color: rgba(50, 50, 50, 0.4);
-  /*float: left;*/
-  margin: 0 50px 10px 50px;
+  float: left;
+  margin: 0 50px 10px 10px;
   padding: 10px 10px 10px 10px;
-  border-radius: 16px;
   text-indent: -12px;
+  border-radius: 10px;
 }
 
 .chat-receiver {
@@ -47,10 +48,6 @@ body {
   float: right;
 }
 
-.chat-receiver img {
-  border-radius: 100%;
-}
-
 .chat-receiver div:nth-of-type(2) {
   margin: 0px 50px 2px 50px;
   padding: 0px;
@@ -60,12 +57,12 @@ body {
 }
 
 .chat-receiver div:nth-of-type(3) {
-  /*float:right;*/
+  float: right;
   /*background-color: #4a4a4a;*/
   background-color: rgba(50, 50, 50, 0.4);
-  margin: 0px 50px 10px 50px;
+  margin: 0px 50px 10px 10px;
   padding: 10px 10px 10px 10px;
-  border-radius: 16px;
+  border-radius: 10px;
 }
 
 .chat-receiver div:first-child img,
