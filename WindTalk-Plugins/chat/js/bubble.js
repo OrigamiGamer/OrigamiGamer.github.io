@@ -163,14 +163,17 @@
     }
 
 
-    //网页移动到指定位置
+    // 网页移动到指定位置
     function page(pos) {
         switch (pos) {
             case "top":
                 //跳转顶部不会写
+                window.scrollTo(0, 0)
+                
                 break;
             case "bottom":
-                document.documentElement.scrollTop = document.body.scrollHeight;
+                window.scrollTo(0, document.body.scrollHeight)
+                // document.documentElement.scrollTop = document.body.scrollHeight;
                 break;
         }
     }

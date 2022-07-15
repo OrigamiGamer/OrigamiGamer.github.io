@@ -2,8 +2,9 @@ body {
   /*background: url(https://w.wallhaven.cc/full/96/wallhaven-96kepd.jpg);*/
   background-size: cover;
   background-repeat: no-repeat;
-  filter: blur(0px);
   background-color: transparent;
+  filter: blur(0px);
+  scroll-behavior: smooth;
   font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
 }
 
