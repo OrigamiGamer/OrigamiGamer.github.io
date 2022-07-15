@@ -5,7 +5,6 @@ body {
   filter: blur(0px);
   background-color: transparent;
   font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
-  
 }
 
 .img-face {
@@ -21,10 +20,10 @@ body {
   float: left;
 }
 
-.chat-sender div:nth-of-type(2) {
+.chat-sender div:nth-of-type(2) { /* Name */
   margin: 0 50px 2px 50px;
   padding: 0px;
-  color: #848484;
+  color: #dfdfdf;
   font-size: 100%;
   text-align: left;
 }
@@ -48,10 +47,10 @@ body {
   float: right;
 }
 
-.chat-receiver div:nth-of-type(2) {
+.chat-receiver div:nth-of-type(2) { /* Name */
   margin: 0px 50px 2px 50px;
   padding: 0px;
-  color: #848484;
+  color: #dfdfdf;
   font-size: 100%;
   text-align: right;
 }
