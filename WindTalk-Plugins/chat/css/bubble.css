@@ -32,7 +32,7 @@ body {
 
 .chat-sender div:nth-of-type(3) {
   /*background-color: #4a4a4a;*/
-  background-color: rgba(50, 50, 50, 0.4);
+  background-color: rgba(20, 20, 20, 0.5);
   float: left;
   margin: 0 50px 10px 10px;
   padding: 10px 10px 10px 10px;
@@ -62,7 +62,7 @@ body {
 .chat-receiver div:nth-of-type(3) {
   float: right;
   /*background-color: #4a4a4a;*/
-  background-color: rgba(50, 50, 50, 0.4);
+  background-color: rgba(20, 20, 20, 0.5);
   margin: 0px 10px 10px 50px;
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
@@ -80,7 +80,7 @@ body {
   width: 0px;
   border-width: 6px;
   border-style: solid;
-  border-color: transparent rgba(50, 50, 50, 0.4) transparent transparent;
+  border-color: transparent rgba(20, 20, 20, 0.5) transparent transparent;
   position: relative;
   left: -22px;
   top: 3px;
@@ -91,7 +91,7 @@ body {
   width: 0px;
   border-width: 6px;
   border-style: solid;
-  border-color: transparent transparent transparent rgba(50, 50, 50, 0.4);
+  border-color: transparent transparent transparent rgba(20, 20, 20, 0.5);
   position: relative;
   right: -22px;
   top: 3px;
