@@ -119,3 +119,34 @@ span {
   color: #FFF;
   mix-blend-mode: difference;
 }
+
+.orgs-container {
+  max-height: 100px;
+  height: 60px;
+  overflow-y: auto;
+}
+
+.orgs-container::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 4px;
+  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+  translate: 0.5s;
+}
+
+.orgs-container::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5)
+}
+
+.orgs-container::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  border-radius: 10px;
+  background: transparent;
+
+}
+
+.orgs-container::-webkit-scrollbar:hover {
+  transform: scale(1.1);
+}
