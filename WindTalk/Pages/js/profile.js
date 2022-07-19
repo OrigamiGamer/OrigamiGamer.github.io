@@ -7,13 +7,13 @@
 
         // Name
         var div_name = document.getElementById("preview-name");
-        div_face.innerHTML(name)
+        div_name.innerHTML = name;
 
         // Account
 
 
         // Email
 
-        
+
     }
 }
