@@ -10,7 +10,8 @@
         div_name.innerHTML = name;
 
         // Account
-
+        var div_account = document.getElementById("detail-account");
+        div_account.innerHTML = account;
 
         // Email
 
