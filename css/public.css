@@ -1,0 +1,174 @@
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 20px;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+img.header_face {
+    display: block;
+    float: left;
+    border-radius: 50%;
+    width: 51px;
+    height: 51px;
+    transition: 0.7s;
+}
+
+img.header_face:hover {
+    transform: rotate(360deg);
+}
+
+a.logo_text {
+    margin-right: 100px;
+}
+
+div.header_link {
+    display: block;
+}
+
+a.header_item {
+    display: block;
+    float: left;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #fff;
+    transition: 0.2s;
+}
+
+a.logo_font:hover,
+a.header_item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+a.logo_font:active,
+a.header_item:active {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+
+/* Button */
+.button {
+    position: relative;
+    display: inline-block;
+    margin: 8px;
+    padding: 16px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    color: #eee;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background-color: rgba(90, 90, 90, 0.7);
+    transform: scale(1.1);
+}
+
+.button:active {
+    background-color: rgba(180, 180, 180, 0.9);
+    color: #000;
+}
+
+
+/* welcome */
+div.welcome-div {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+
+p.welcome-p {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    text-shadow: 0 2px 20px black;
+    z-index: 2;
+}
+
+
+p.welcome-p {
+    animation-name: p-into;
+    animation-duration: 1.2s;
+    animation-timing-function: cubic-bezier(0.9, 0.1, 0.1, 0.9);
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+@keyframes p-into {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 255;
+    }
+
+    70% {
+        opacity: 255;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+div.welcome-bg {
+    background-image: url("../img/bg2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+div.welcome-bg {
+    animation-name: bg-into;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.9, 0.1, 0.1, 0.9);
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes bg-into {
+    0% {
+        transform: scale(1.5);
+        /*-webkit-filter: blur(0);
+		filter: blur(0);*/
+    }
+
+    100% {
+        transform: scale(1.0);
+        /*-webkit-filter: blur(0);
+		filter: blur(0);*/
+    }
+}
+
+/* Markdown格式的文章 */
+.article_content {
+    color: rgb(200, 200, 200);
+    font-size: 20px;
+}
+
+div.article-bg {
+    background-color: rgba(0, 0, 0, 0.6);
+}
